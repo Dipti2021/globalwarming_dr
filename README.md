@@ -32,3 +32,70 @@ The project includes:
    ```bash
    git clone https://github.com/Dipti2021/globalwarming_dr.git
    ```
+2. Navigate to the project directory:
+
+```bash
+cd globalwarming_dr
+```
+
+3. Install the required packages:
+
+```bash
+ pip install -r requirements.txt
+```
+
+## ▶️ Usage
+
+1. Ensure the `GlobalTemperatures.csv` file is in the project directory.
+   - The dataset can be downloaded from [GISS Surface Temperature Analysis (GISTEMP v4)](https://data.giss.nasa.gov/), specifically from the [Global-mean monthly, seasonal, and annual means, 1880-present](https://data.giss.nasa.gov/gistemp/).
+2. Run the jupyter notebook
+
+## 🔄 Data Preprocessing
+
+1. Load Data: Load data from GlobalTemperatures.csv.
+2. Data Cleaning: Replace '\*\*\*' with NaN and convert data to numeric.
+3. Feature Engineering: Split data into features (X) and target (y).
+4. Standardization: Standardize features using StandardScaler.
+
+## 🧠 Model Training and Evaluation
+
+The following models are trained and evaluated:
+
+- Linear Regression
+- Random Forest Regression
+- Recurrent Neural Network (RNN)
+- Support Vector Regression (SVR)
+- Gradient Boosting Regression
+
+## 📊 Results
+
+Model Performance (Mean Squared Error - MSE)
+
+| Model                        | Mean Squared Error (MSE) |
+| ---------------------------- | ------------------------ |
+| Linear Regression            | 1.2534478212723646e-05   |
+| Random Forest Regression     | 0.0013798172413793087    |
+| RNN                          | 0.0004137594654409371    |
+| SVR                          | 0.002840265153870605     |
+| Gradient Boosting Regression | 0.0018607360500542598    |
+
+## 📈 Visualization
+
+1. Loss History
+2. Model Predictions:
+
+- Linear Regression
+- Random Forest
+- RNN
+- SVR
+- Gradient Boosting
+
+3. Temperature Trends
+
+## 📚 References
+
+- [Global Temperature Anomalies](https://data.giss.nasa.gov/gistemp/)
+- [Scikit-Learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Keras Documentation](https://keras.io/)
+
+Feel free to contribute to this project by opening issues and pull requests. Let's work together to understand and predict global temperature trends! 🌍📈
